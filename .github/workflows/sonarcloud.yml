@@ -29,8 +29,8 @@ jobs:
 
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
